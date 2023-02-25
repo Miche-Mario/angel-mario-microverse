@@ -5,20 +5,74 @@
 	</head>
 	<body>
 		<style>
-			nav {
+
+            body{
+                margin: 0px;
+                padding: 0px;
+            }
+
+			header {
                 position: fixed;
             }
+
+            .nav-link{
+                margin: 10px;
+            }
+
+            .nav-container{
+                margin-right: 100px;
+            }
+
+            img{
+                width: 100px;
+            }
+
+            ul{
+                list-style: none;
+            }
+
+            li{
+                display: inline;
+
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            #header{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            @media(max-width: 600px) {
+                body {
+                    background-color: lightblue;
+               }
+            }
+            /* @media only screen and (max-width: 600px) {
+                body {
+                    background-color: lightblue;
+               }
+            } */
+
+
 		</style>
         <header id="header">
-            <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="first image" id="header-img"/>
-            <nav id="nav-bar">
-                <ul>
-                    <li><a class="nav-link" href="#section1">First Section</a></li>
-                    <li><a class="nav-link" href="#section2">Second Section</a></li>
-                    <li><a class="nav-link" href="#footer">Footer section</a></li>
-
-                </ul>
-            </nav>
+                <div>
+                    <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="first image" id="header-img"/>
+                </div>
+                <div class="nav-container">
+                    <nav id="nav-bar">
+                        <ul>
+                            <li><a class="nav-link" href="#section1">First Section</a></li>
+                            <li><a class="nav-link" href="#section2">Second Section</a></li>
+                            <li><a class="nav-link" href="#footer">Footer section</a></li>
+        
+                        </ul>
+                    </nav>
+                </div>
         </header>
         
         <section id="section1">
